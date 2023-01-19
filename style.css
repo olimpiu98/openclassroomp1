@@ -1,0 +1,688 @@
+* {
+	box-sizing: border-box;
+	font-family: "Raleway", sans-serif;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+:root {
+	--color-blue: #0065fc;
+	--color-lblue: #deebff;
+	--color-background: #f2f2f2;
+	--color-bordergrey: #f2f2f2;
+	--color-text: #000000;
+	--color-white: #fff;
+}
+
+.content__wrapper {
+	max-width: 1450px;
+	margin: auto;
+	padding: 0 20px 0 20px;
+}
+
+/***********************************************************************/
+/******************************** Logo ********************************/
+/*********************************************************************/
+.logo__wrapper {
+	margin: 40px 0 20px 0;
+}
+
+.logo__img {
+	width: 100%;
+	max-width: 100px;
+}
+
+.logo__title h1 {
+	margin-bottom: 5px;
+	font-size: 20px;
+	font-weight: 700;
+}
+
+.logo__title p {
+	margin: 0px;
+	font-size: 15px;
+}
+/* End Logo */
+
+/***********************************************************************/
+/******************************* Search *******************************/
+/*********************************************************************/
+.search__bar {
+	display: flex;
+	padding-bottom: 15px;
+}
+
+.search__bar i {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 50px;
+	height: 50px;
+	background-color: var(--color-background);
+	border: 1px solid var(--color-bordergrey);
+	border-top-left-radius: 15px;
+	border-bottom-left-radius: 15px;
+}
+
+.search__design {
+	padding: 10px;
+	font-size: 11px;
+	border: 1px solid var(--color-bordergrey);
+	float: left;
+	height: 50px;
+	font-size: 15px;
+	font-weight: 700;
+}
+
+.search__bar button {
+	background: var(--color-blue);
+	color: white;
+	border: none;
+	cursor: pointer;
+	width: 90px;
+	border-top-right-radius: 15px;
+	border-bottom-right-radius: 15px;
+	font-size: 17px;
+	font-weight: 700;
+}
+
+.search__bar button:hover {
+	background: #0b3fda;
+}
+
+/* End search bar */
+
+/***********************************************************************/
+/******************************* Navbar *******************************/
+/*********************************************************************/
+.nav__bar {
+	padding-top: 1px;
+	float: right;
+}
+
+.nav__bar a {
+	padding: 0 20px;
+	color: var(--color-text);
+	text-decoration: none;
+	font-size: 17px;
+}
+
+.nav__bar a:hover,
+.nav__bar current a {
+	padding-top: 39px;
+	border-top: 5px solid var(--color-blue);
+	color: var(--color-blue);
+}
+/* End Navbar */
+
+/***********************************************************************/
+/******************************* Filter *******************************/
+/*********************************************************************/
+.filter__list {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.filter__text {
+	font-weight: 700;
+}
+
+.filter__list ul {
+	display: inline-flex;
+	flex-wrap: wrap;
+	list-style: none;
+	gap: 40px;
+}
+
+.filter__list li {
+	float: left;
+}
+
+.btn {
+	display: flex;
+	align-items: center;
+	padding-left: 30px;
+	padding-right: 30px;
+	height: 43px;
+	font-weight: 700;
+	border: 1px solid rgb(192, 192, 192); /* Remove borders */
+	cursor: pointer; /* Mouse pointer on hover */
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+	/* "to left" / "to right" - affects initial color */
+	background: linear-gradient(to left, var(--color-white) 50%, var(--color-lblue) 50%) right;
+	background-size: 200%;
+	transition: 0.5s ease-out;
+}
+
+.btn:hover {
+	background-position: left;
+}
+
+.btn__icon {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-left: -55px;
+	background-color: var(--color-lblue);
+	color: var(--color-blue);
+	border: none;
+	border-radius: 30px;
+	margin-right: 10px;
+	height: 43px;
+	width: 43px;
+}
+/* End Filter */
+
+/***********************************************************************/
+/**************************** Information *****************************/
+/*********************************************************************/
+.information__section {
+	max-width: 430px;
+	display: flex;
+}
+
+.fa-info {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	height: 27px;
+	width: 27px;
+	font-size: 11px;
+	border-radius: 60px;
+	color: var(--color-blue);
+	border: 2px solid var(--color-bordergrey);
+	background-color: var(--color-white);
+	margin-right: 8px;
+}
+/* End Information */
+
+/***********************************************************************/
+/******************************** Cards *******************************/
+/*********************************************************************/
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.background__cards {
+	width: auto;
+	padding: 0 0 25px 0;
+	background-color: var(--color-background);
+	border-radius: 20px;
+}
+
+.background__cards2 {
+	width: auto;
+	padding: 0 20px 30px 20px;
+	background-color: var(--color-background);
+	border-radius: 20px;
+}
+
+.gallery__wrapper {
+	display: flex;
+	gap: 40px;
+}
+
+.gallery-1 {
+	width: 66%;
+}
+
+.gallery-2 {
+	width: 33%;
+}
+
+.cards {
+	background-color: #fff;
+	box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05), 0 20px 50px 0 rgba(0, 0, 0, 0.1);
+	border-radius: 24px;
+}
+
+.popular__list > .cards,
+.accommodations__list > .cards {
+	border: 4px solid #fff;
+}
+
+.cards__accommodations {
+	padding: 20px 20px 10px 20px;
+}
+
+.cards__image {
+	width: 250px;
+	max-height: 120px;
+	object-fit: cover;
+}
+
+.cards__image2 {
+	height: 140px;
+	width: 200px;
+	max-width: 140px;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+	object-fit: cover;
+}
+
+.cards__content {
+	margin-left: -10px;
+}
+
+.cards__content h2 {
+	padding: 0;
+	margin: 0;
+}
+
+.cards__header {
+	font-weight: 700;
+	font-size: 17px;
+	padding-right: 10px;
+	color: inherit;
+	display: inline-block;
+	max-width: 200px;
+}
+
+.cards__description {
+	margin: 5px 0 5px 0;
+}
+
+.cards__tall {
+	object-fit: cover;
+	width: 320px;
+	max-width: 100%;
+	height: 400px;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+}
+
+.cards__small {
+	object-fit: cover;
+	height: 110px;
+	width: 330px;
+	max-width: 100%;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+}
+
+.cards__size1 {
+	height: 190px;
+}
+
+.cards__size2 {
+	height: 155px;
+}
+/*** Stars ***/
+.stars {
+	display: flex;
+	margin: 0;
+	padding: 0;
+	font-size: 13px;
+}
+
+.star__active {
+	margin: 0;
+	color: var(--color-blue);
+}
+
+.star__inactive {
+	margin: 0;
+	color: #bcbcbc;
+}
+/* End Cards */
+
+/***********************************************************************/
+/**************************** Accommodations **************************/
+/*********************************************************************/
+.top__section {
+	margin-bottom: 50px;
+}
+
+.accommodations__title {
+	margin-left: 55px;
+	padding-top: 40px;
+	font-size: 23px;
+}
+
+.accommodations__list {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 30px;
+	margin-bottom: 30px;
+}
+
+.accommodations__image {
+	max-width: 250px;
+	border-top-left-radius: 21px;
+	border-top-right-radius: 21px;
+	overflow: hidden;
+	margin: -20px;
+	height: 120px;
+	margin-bottom: 5px;
+}
+
+.accommodations__moreplaces {
+	margin-left: 55px;
+	font-weight: 700;
+	font-size: 14px;
+	padding-top: 20px;
+}
+/*End Accommodations */
+
+/***********************************************************************/
+/****************************** Popular *******************************/
+/*********************************************************************/
+
+.popular__cards {
+	width: 500px;
+}
+
+.popular__cards a {
+	display: flex;
+}
+
+.popular__text {
+	display: flex;
+	justify-content: space-between;
+	font-size: 23px;
+	font-weight: 700;
+	padding-top: 35px;
+}
+
+.popular__content {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	height: 140px;
+	margin-left: 20px;
+}
+
+.popular__list {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+	justify-content: center;
+}
+/* End popular */
+
+/***********************************************************************/
+/**************************** Activities ******************************/
+/*********************************************************************/
+.activities__gallery {
+	display: flex;
+	flex-direction: row;
+	gap: 43px;
+	margin: auto;
+}
+
+.activities__small {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.activities__header {
+	padding: 0 0 0 20px;
+	text-decoration: none;
+	color: inherit;
+}
+/* End activities */
+
+/***********************************************************************/
+/****************************** Footer ********************************/
+/*********************************************************************/
+.footer {
+	background-color: var(--color-background);
+	margin-top: 60px;
+}
+
+.footer li {
+	list-style: none;
+}
+
+.footer__section ul {
+	width: 100%;
+}
+
+.footer__section {
+	display: flex;
+	flex-direction: row;
+	padding-bottom: 10px;
+	justify-content: space-between;
+}
+
+.footer__title {
+	font-weight: 700;
+	padding: 20px 0px 15px;
+}
+
+.footer__text {
+	font-size: 13px;
+	padding-bottom: 10px;
+}
+
+.footer__text > a {
+	text-decoration: none;
+	color: rgb(43, 43, 43);
+}
+
+.footer__text > a:hover {
+	color: #000;
+}
+/* End footer */
+
+/***********************************************************************/
+/******************************* Mobile *******************************/
+/*********************************************************************/
+.icon {
+	display: none;
+}
+@media only screen and (max-width: 768px) {
+	.text {
+		display: none;
+	}
+	.icon {
+		display: block;
+	}
+	.logo__wrapper {
+		margin: 15px 0 20px 0;
+	}
+	.content__wrapper {
+		margin: 0;
+		padding: 0;
+	}
+	.order-1 {
+		order: 1;
+	}
+	.order-2 {
+		order: 2;
+	}
+	.order-3 {
+		order: 3;
+	}
+	.order-4 {
+		order: 4;
+	}
+	.btn_padding__plus {
+		padding-right: 15px;
+	}
+	.btn_margin__15 {
+		margin-right: -15px;
+	}
+	.logo__img {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 50%;
+		margin-bottom: 25px;
+	}
+	.accommodations__title {
+		margin-left: 25px;
+	}
+	.logo__title {
+		max-width: 300px;
+		margin: 20px;
+	}
+	.logo__title p {
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	.search__bar {
+		justify-content: center;
+		margin-bottom: 15px;
+	}
+	.search__bar button {
+		width: 50px;
+		border-radius: 15px;
+	}
+	.search__bar input {
+		width: 70%;
+		margin-right: -30px;
+	}
+	.filter__text {
+		margin-left: 30px;
+	}
+	.filter__list ul {
+		gap: 10px 40px;
+		margin: 10px;
+	}
+	.information__section {
+		max-width: 300px;
+		margin-left: 15px;
+	}
+	.gallery__wrapper {
+		flex-flow: column;
+		gap: 0;
+	}
+	.top__section {
+		margin-bottom: 0;
+	}
+	.background__cards2 {
+		border-radius: 0;
+	}
+	.background__cards {
+		border-radius: 0;
+		background-color: inherit;
+	}
+	.accommodations__image {
+		max-width: 360px;
+	}
+	.popular__content {
+		margin-right: 40px;
+	}
+	.accommodations__moreplaces {
+		margin-left: 30px;
+	}
+	.activities__gallery {
+		margin: 0;
+		gap: 30px;
+	}
+	.footer__section {
+		flex-direction: column;
+		width: 100%;
+		padding-bottom: 10px;
+	}
+	.nav__bar {
+		display: flex;
+		position: relative;
+		margin: auto;
+		justify-content: space-evenly;
+		right: 0;
+		float: none;
+	}
+	.nav__bar a {
+		display: inline-flex;
+		justify-content: center;
+		border-bottom: 2px solid var(--color-bordergrey);
+		padding-bottom: 10px;
+		width: 100%;
+	}
+	.nav__bar a:hover {
+		padding-top: 0;
+		border-top: 0;
+		padding-bottom: 10px;
+		border-bottom: 2px solid var(--color-blue);
+		color: var(--color-blue);
+	}
+	.activities__wrapper {
+		margin-left: 25px;
+		margin-right: 25px;
+	}
+
+	.cards__image {
+		width: 350px;
+	}
+	.cards__size1,
+	.cards__size2,
+	.cards__small,
+	.cards__tall {
+		height: 155px;
+		width: 100%;
+		max-width: 100%;
+	}
+}
+
+@media only screen and (max-width: 992px) {
+	.gallery__wrapper {
+		display: flex;
+		flex-direction: column;
+		gap: 0;
+	}
+	.activities__gallery {
+		flex-direction: column;
+	}
+	.activities__small {
+		gap: 30px;
+	}
+	.cards__size1,
+	.cards__size2,
+	.cards__small,
+	.cards__tall {
+		height: 155px;
+		width: 100%;
+	}
+	.footer__section {
+		flex-direction: column;
+		width: 100%;
+	}
+	.gallery-1,
+	.gallery-2 {
+		width: auto;
+	}
+	.activities__wrapper {
+		margin-left: 25px;
+		margin-right: 25px;
+	}
+	.accommodations__list {
+		gap: 15px;
+	}
+}
+
+@media only screen and (min-width: 995px) {
+	.footer__section ul {
+		padding: 0;
+	}
+}
+
+@media only screen and (max-width: 330px) {
+	.accommodations__image {
+		max-width: 250px;
+	}
+	.popular__cards {
+		max-width: 260px;
+	}
+	.cards__image2 {
+		max-width: 80px;
+	}
+	.nav__bar a {
+		padding: 0 15px;
+	}
+	.popular__content {
+		margin-right: 0;
+	}
+}
+
+/* End Orders */

@@ -1,4 +1,7 @@
 # Booki Website
+> Github : https://github.com/olimpiu98/openclassroomp1
+
+> Web preview: https://olimpiu98.github.io/openclassroomp1/
 
 This project involves building the new [Booki website](https://olimpiu98.github.io/openclassroomp1/) based on the provided mockups and specifications.
 ### Screenshot
